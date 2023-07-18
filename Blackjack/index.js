@@ -1,17 +1,13 @@
-let cardno1 = 2
-let cardno2 = 10
+let cards = [];
 
-
-
-let cardsEl = document.getElementById("cards")
-let sumEl = document.getElementById("sum")
-
-
-function cards(){
-    cardsEl.innerText = "cards : " + cardno1 + " " + cardno2
-    sumEl.innerText =  "sum : " + (cardno1 + cardno2)
-}
-
-function newcard(){
+function newCard(){
+    cards.push(Math.floor((Math.random() * 10) + 1));
 
 }
+newCard()
+newCard()
+newCard()
+newCard()
+newCard()
+
+console.log(cards)
